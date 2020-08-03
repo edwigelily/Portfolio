@@ -301,6 +301,88 @@ nav .navigation{
     0.3vw 0 20vw rgb(15, 6, 102),0.4vw 0 10vw rgb(15, 6, 102),0.1vw 0 10vw rgb(15, 6, 102);
 
 }
+                                        /*compétences*/
+
+
+.skills li{
+    margin: 20px 0;
+}
+article.competences{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar{
+    background-color: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background-color: #2187e7;
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 72%;
+    animation: css 2s;
+}
+.js{
+    width: 35%;
+    animation: js 2s;
+
+}
+.php{
+    width: 10%;
+    animation: php 2s;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 62%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+
+
                                        /* page contact */
 .contact{
     background: linear-gradient(to bottom,rgba(13, 13, 13, 1),rgba(142, 139, 139, 0.8003),rgba(142, 139, 139, 0));
